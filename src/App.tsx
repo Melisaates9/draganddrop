@@ -97,13 +97,14 @@ setOpen(false)
                     <Box
                       sx={{
                         justifyContent: "center",
-                        display: "flex",
+                        display: "inline-flex",
                         border: "0.5px solid",
                         marginTop: "10px",
+                        
                       }}
                     >
                       <Box
-                        sx={{}}
+                        sx={{fontSize:"25px", color:"white"}}
                         ref={provided.innerRef}
                         {...provided.draggableProps}
                         {...provided.dragHandleProps}
