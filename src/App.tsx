@@ -85,8 +85,10 @@ setOpen(false)
         >
           Send
         </Button>
+      
       </Box>
-
+      <Box sx={{display:"flex"}}> 
+<Box sx={{flexDirection:"column",textAlign:"center"}}>
       <DragDropContext onDragEnd={onDragEnd}>
         <Droppable droppableId="List">
           {(provided) => (
@@ -96,11 +98,12 @@ setOpen(false)
                   {(provided) => (
                     <Box
                       sx={{
-                        justifyContent: "center",
-                        display: "inline-flex",
+                        justifyContent: "center", 
                         border: "0.5px solid",
-                        marginTop: "10px",
-                        
+                        marginTop: "10px", 
+                        display:"flex",
+                        width:"max-content",
+                        marginInline:"auto"
                       }}
                     >
                       <Box
@@ -137,7 +140,8 @@ setOpen(false)
           )}
         </Droppable>
       </DragDropContext>
-
+      </Box>
+      </Box>
       <Modal
         open={open}
         onClose={handleClose}
